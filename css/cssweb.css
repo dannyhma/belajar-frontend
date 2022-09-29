@@ -1,0 +1,237 @@
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Style */
+body {
+    font: 16px/28px sans-serif;
+    background-color: #eaeaea;
+    color: #333333;
+    background-image: url(../image/leaves.webp);
+    background-blend-mode: lighten;
+}
+
+.container {
+    width: 1024px;
+    margin: 50px auto 0;
+    background-color: white;
+    position: relative;
+}
+
+/* Top Bar */
+.top-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    height: 40px;
+    border-bottom: 5px solid lightskyblue;
+    box-sizing: border-box;
+    z-index: 99999;
+}
+
+.top-bar ul li {
+    display: inline-flex;
+}
+
+/* Sosmed */
+.sosmed {
+    background-image: url(../image/Facebook.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 63px;
+    text-indent: -99999px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: gray;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: white;
+    color: black;     
+}
+
+.banner {
+    height: 400px;
+    background-image: url(../image/banner.jpg);
+    background-size: cover;
+    background-position: 0 -200px;
+    border-top: 5px solid lightskyblue;
+    border-bottom: 5px solid lightgreen;
+}
+
+/* Main */
+.main {
+    width: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+}
+
+.main .penulis {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.main .penulis a {
+    text-decoration: none;
+    color: salmon;
+    padding: 5px;
+}
+
+.main p {
+    text-align: justify;
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    color: #666;
+}
+
+.sidebar img {
+    width: 78px;
+    height: 100px;
+    float: left;
+    padding-right: 14px;
+    padding-top: 8px;  
+}
+
+.sidebar p {
+    font: 14px/28px sans-serif;
+    text-align: justify;
+}
+
+/* Footer */
+.footer {
+    background-color: #333333;
+    padding: 8px;
+}
+
+.footer .copyright {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer .copyright a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+/* Clearfix */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }

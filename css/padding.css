@@ -1,0 +1,32 @@
+/* div {
+    width: 230px;
+    height: 230px;
+    background-color: coral;
+    margin: 20px auto; */
+    /* padding: 20px 30px 40px 50px; */
+    /* Atas Kanan Bawah Kiri */
+    /* padding: 50px;
+    text-align: justify;
+    border-left: 10px dashed black;
+    border-right: 10px dotted blue;
+    border-bottom: 10px double green;
+    border-top: 10px solid yellow;
+} */
+
+div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.satu {
+    background-color: lightblue;
+    padding: 20px;
+    border: 15px solid rebeccapurple;
+}
+
+.dua{
+    background-color: lightgreen;
+    padding: 30px;
+    border: 10px dashed orange;
+}

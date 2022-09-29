@@ -1,0 +1,8 @@
+/* https://specificity.keegan.st/ */
+ul#sarapan li {
+    color: green;
+}
+
+ul#sarapan li.favorite {
+    color: red;
+}

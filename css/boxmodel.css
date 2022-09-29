@@ -1,0 +1,99 @@
+/* overlapping margin */
+.overlapping div {
+    display: inline-block;
+}
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-left: 20px;
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+}
+
+/* negatif margin */
+.empat {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-bottom: 30px;
+}
+
+.lima {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: -150px;
+    margin-left: 0px;
+}
+
+.enam {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    margin-bottom: 10px;
+}
+
+/* auto margin */
+.tujuh {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin: 40px auto;
+    /* 40px atas-bawah */
+    /* auto kiri-kanan */
+}
+
+.delapan {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 20px 20px;
+    /* 40px atas-bawah */
+    /* 20px kiri-kanan */
+}
+
+.sembilan {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    margin: 40px 50px 60px;
+    /* 20px atas */
+    /* 40px kiri-kanan */
+    /* 30px bawah */
+}
+
+.sepuluh {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    margin: 40px 20px 60px 70px;
+    /* (searah jarum jam) */
+    /* 40px atas */
+    /* 20px kanan */
+    /* 60px bawah */
+    /* 70px kiri */
+}
+
+.sebelas {
+    width: 60px;
+    height: 60px;
+    background-color: lightcoral;
+    margin: 40px auto 60px;
+    /* 20px atas */
+    /* auto kiri-kanan */
+    /* 30px bawah */
+}

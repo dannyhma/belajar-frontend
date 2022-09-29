@@ -1,0 +1,43 @@
+/* body {
+    background-color: lightblue;
+    background-image: url(../image/treeedit.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+} */
+
+/* background styling */
+body {
+    background: lightblue url(../image/treeedit.png) no-repeat bottom center;
+}
+
+/* h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-variant: small-caps;
+    font-style: italic;
+} */
+
+/* font styling */
+h1 {
+    font: italic normal bold 50px/10px helvetica, arial, sans-serif;
+    color: rgba(28, 98, 126, 0.938);
+    text-decoration: overline underline line-through;
+    text-transform: uppercase;
+    /* wajib: 60px helvetica, arial, sans-serif */
+    /* optional: italic normal bold 20px */
+}
+
+/* text styling */
+p, a {
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 100px;
+    text-align: justify;
+    line-height: 30px;
+    word-spacing: 5px;
+    text-transform: capitalize;
+    /* text-decoration: none; */
+}
+
+a {
+    text-decoration: none;
+}

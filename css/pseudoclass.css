@@ -1,0 +1,56 @@
+ul li a, ol li a, a{
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+.cetak-tebal:link {
+    color: orange;
+}
+
+.cetak-tebal:hover {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.cetak-tebal:active {
+    font-style: italic;
+}
+
+.cetak-tebal:visited {
+    color: green;
+}
+
+/* pertama */
+ul li:first-child a{
+    color: yellow;
+}
+
+/* terakhir */
+ul li:last-child a{
+    color: red;
+}
+
+/* custom */
+ul li:nth-child(2n) a{
+    color: olive;
+}
+
+/* ganjil */
+ol li:nth-child(odd) a{
+    color: olive;
+}
+
+/* genap */
+ol li:nth-child(even) a:hover {
+    color: yellowgreen;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+p:first-of-type {
+    color: red;
+}

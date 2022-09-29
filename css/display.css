@@ -1,0 +1,39 @@
+.navigasi {
+
+}
+
+.main {
+    width: 600px;
+    background-color: lightblue;
+}
+
+.main h2 {
+    background-color: lightgreen;
+}
+
+.main span {
+
+}
+
+h1 {
+    background-color: lightblue;
+}
+
+/* a {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+} */
+
+.navigasi ul li {
+    display: inline;
+}
+
+img {
+    width: 100px;
+}
+
+.hilang {
+    display: none;
+}
