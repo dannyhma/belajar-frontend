@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form!</title>
+</head>
+<body>
+    <form action="">
+        <table>
+                <tr>
+                    <td>
+                        <label for="username">Username</label>    
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td>:</td>
+                    <td>
+                        <input type="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jeniskelamin" id="pria">
+                            <label for="pria">Pria</label>
+                        <input type="radio" name="jeniskelamin" id="wanita">
+                            <label for="wanita">Wanita</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Favorite</td>
+                    <td>:</td>
+                    <td>
+                        <input type="checkbox" id="ngoding">
+                            <label for="ngoding">Ngoding</label><br>
+                        <input type="checkbox" id="membaca">
+                            <label for="membaca">Membaca</label><br>
+                        <input type="checkbox" id="belajar">
+                            <label for="belajar">Belajar</label><br>
+                        <input type="checkbox" id="tidur">
+                            <label for="tidur">Tidur</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td>
+                        <textarea name="alamat" id="alamat" cols="19" rows="5" placeholder="Alamat"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Makanan</td>
+                    <td>:</td>
+                    <td>
+                        <select name="makanan" id="makanan">
+                            <option>Pisang Goreng</option>
+                            <option>Martabak</option>
+                            <option>Bakwan</option>
+                            <option>Tahu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+        </table>
+    </form>
+</body>
+</html>

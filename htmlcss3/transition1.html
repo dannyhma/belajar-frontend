@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition 1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 650px;
+            margin: 10px auto;
+            border: 2px dashed black;
+            border-radius: 50px;
+        }
+        .container1, .container2{
+            width: 600px;
+            margin: 10px auto;
+            border: 2px solid black;
+            border-radius: 50px;
+        }
+        .kotak1 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            /* transition: all 3s 2s ease; */
+            transition: margin-left 5s, transform 3s 2s, background-color 500ms 3s;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .kotak2 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px 0;
+        }
+        .kotak3 {
+            transition: all 3s ease-in;
+        }
+        .kotak4 {
+            transition: all 3s ease-out;
+        }
+        .kotak5 {
+            transition: all 3s ease-in-out;
+        }
+        .kotak6 {
+            transition: all 3s linear;
+        }
+        .kotak7 {
+            transition: all 3s cubic-bezier(.24, -.35, .78, 1.46);
+        }
+        .container:hover .kotak1, .container:hover .kotak2{
+            transform: rotate(450deg);
+            margin-left: 500px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="kotak1">ease</div>
+        </div>
+        <div class="container2">
+            <div class="kotak2 kotak3">ease-in</div>
+            <div class="kotak2 kotak4">ease-out</div>
+            <div class="kotak2 kotak5">ease-in-out</div>
+            <div class="kotak2 kotak6">ease-linear</div>
+            <div class="kotak2 kotak7">cubic-bezier</div>
+        </div>
+    </div>
+</body>
+</html>
